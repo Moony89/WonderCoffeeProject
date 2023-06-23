@@ -200,6 +200,7 @@ h2 {
     background-image: url(../IMG/Menu/Blackboard.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 
     font-family: 'Craie';
     color: white;
@@ -226,6 +227,8 @@ h3 {
     margin-top: 15%;
 }
 
+/* Ardoise 1 */
+
 .containDrinks {
     display: flex;
     justify-content: space-around;
@@ -235,7 +238,7 @@ h3 {
 
 .containDrinks p {
     margin-top: 0;
-    margin-bottom: 30%;
+    margin-bottom: 32%;
 }
 
 #coffee {
@@ -253,3 +256,40 @@ h3 {
 #otherDrinks {
     width: 20%;
 }
+
+/* Ardoise 1 */
+
+/* Ardoise 2*/
+
+.cakes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cakes p {
+    width: 20%;
+    line-height: 150%
+}
+
+.containCakes {
+    display: flex;
+    justify-content: stretch;
+}
+
+#birthday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#birthdayTitle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#birthday p {
+    margin-top: 0;
+    line-height: 100%
+}
+
+/* Ardoise 2*/
