@@ -14,7 +14,7 @@
 }
 
 body {
-    margin : 0
+    margin: 0
 }
 
 /* Header section */
@@ -50,12 +50,9 @@ nav {
     width: 150%;
     list-style: none;
 }
-/* Header section */
+/* End Header section */
 
-
-
-/* Phare product section */
-
+/* Start Phare product section */
 #phare_product {
     background-image: url(../IMG/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
 }
@@ -73,28 +70,28 @@ h2 {
 }
 
 .containImages {
-    height: 100%;
     width: 100%
 }
+
 .images {
     width: 100%;
 }
 
 /* Gourmet coffee section */
-
-
-#gourmet_coffee {
+.gourmet_pastries {
     display: flex;
     justify-content: space-between;
 }
 
-#gourmetCoffeeText{
+.menuText {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    width: 100%;
 }
 
-#gourmetCoffeeText img {
+.vintageArrow {
     width: 100%;
     height: 13%;
 }
@@ -104,99 +101,45 @@ h2 {
     font-weight: 400;
     font-size: 50px;
     line-height: 115%;
-
     text-align: center;
 
     margin-top: 0;
 }
 
-#test {
+.list {
     list-style: inside;
+    margin-bottom: 2%;
 }
+/* End Gourmet coffee section */
 
-/* Gourmet coffee section */
-
-/* Pancakes section */
-
+/* Start Pancakes section */
 #pancakes {
     display: flex;
     justify-content: flex-start;
 }
+/* End Pancakes section */
 
-#pancakesText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 100%;
-}
-
-#pancakesText img {
-    width: 100%;
-    height: 13%;
-}
-
-#test2 li {
-    list-style: inside;
-    list-style-type: '-';
-}
-
-/* Pancakes section */
-
-/* Sweet Pastries section */
-
-#sweet_pastries {
-    display: flex;
-    justify-content: space-between;
-}
-
-#pastriesText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-#pastriesText img {
-    width: 100%;
-    height: 11%;
-}
-
-#test3 {
-    margin-bottom: 2%;
-    list-style: inside;
-}
-
-#test4 {
-    list-style: inside;
-}
-
-#pastries {
+/* Start Sweet Pastries section */
+.bottom {
     margin-bottom: 2%;
 }
+/* End Sweet Pastries section */
 
-#cakes {
-    margin-bottom: 2%;
-}
+/* End Phare product section */
 
-/* Sweet Pastries section */
-
-/* Phare product section */
-
-
-/* Menu section */
-
+/* Start Menu section */
 #menu {
     background-image: url(../IMG/Menu/grain\ caffé.png);
     background-size: 100%, cover;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
-    height: 31.3%;
+    height: 130dvh;
 }
 
-#ardoise1, #ardoise2 {
+#ardoise1,
+#ardoise2 {
     background-image: url(../IMG/Menu/Blackboard.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -206,14 +149,10 @@ h2 {
     color: white;
     font-size: 24px;
 
-    width: 45.5%;
+    width: 50%;
     height: 81.15%;
 
     margin-top: 10%;
-}
-
-#ardoise2 {
-    display: grid;
 }
 
 h3 {
@@ -227,8 +166,7 @@ h3 {
     margin-top: 15%;
 }
 
-/* Ardoise 1 */
-
+/* Start Ardoise 1 */
 .containDrinks {
     display: flex;
     justify-content: space-around;
@@ -241,29 +179,24 @@ h3 {
     margin-bottom: 32%;
 }
 
-#coffee {
-    width: 25%;
-}
-
-.prix {
-    width: 12%;
-}
-
-#tea {
-    width: 10%;
-}
-
-#otherDrinks {
+.coffeeOther {
     width: 20%;
 }
 
-/* Ardoise 1 */
+.TeaPrice {
+    width: 12%;
+}
+/* End Ardoise 1 */
 
-/* Ardoise 2*/
+/* Start Ardoise 2*/
+.cakes2 {
+    width: 40%;
+}
 
 .cakes {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 30%;
 }
 
 .cakes p {
@@ -273,7 +206,7 @@ h3 {
 
 .containCakes {
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
 }
 
 #birthday {
@@ -284,12 +217,58 @@ h3 {
 
 #birthdayTitle {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 #birthday p {
     margin-top: 0;
     line-height: 100%
 }
+/* End Ardoise 2*/
 
-/* Ardoise 2*/
+/* End Menu section */
+
+@media screen and (max-width: 1400px) {
+
+    nav {
+        margin-left: 20%;
+    }
+
+    .phareProductText {
+        font-size: 40px;
+    }
+
+    .cakes {
+        gap: 50%;
+    }
+
+    #birthdayTitle {
+        margin-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    nav {
+        margin-left: 10%;
+    }
+
+    #menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: auto;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #ardoise1,
+    #ardoise2 {
+        width: 70%;
+        height: auto;
+    }
+
+}
