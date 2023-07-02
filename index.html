@@ -4,48 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style-jim.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <script src="../JS/script.js" defer></script>
     <title>The Wonder Coffee Shop</title>
 </head>
 
 <body>
 
-    <!-- OUR SPECIALITIES -->
-    <section>
+    <!-- Our specialities -->
+    <section class="secspecial">
 
-        <h2>OUR SPECIALITIES</h2>
+        <h2>Our specialities</h2>
 
-        <div>
+        <div class="innerspecial">
+
             <p>
 
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dicta minus eaque nihil itaque
-                magni
-                animi, asperiores voluptatibus. Ab quis ducimus mollitia voluptatem minima esse cum nam possimus quos
-                deleniti perspiciatis voluptatum, perferendis totam quasi nemo optio, aspernatur placeat quia.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium exercitationem error
+                accusamus id labore quia sunt perspiciatis, recusandae numquam sed harum tempora laborum laboriosam!
+                Nostrum recusandae ullam rerum minus!
 
             </p>
 
-            <div>
+            <img src="./IMG/Emplacement Carousel.jpg" alt="Carousel">
+            <!-- Emplacement carousel -->
 
-                <!-- Emplacement caroussel -->
-
-            </div>
         </div>
 
-        <button>Our Menu</button>
+        <a class="cta" href="./HTML/menu.html">Our Menu</a>
 
     </section>
 
     <!-- Promo Musée -->
-    <section>
+    <section class="secmuseum">
 
-        <span>
+        <p>
 
             The Tim Burton museum is just next to us...
             If you want to discover the universe we have the perfect offer !
 
-        </span>
+        </p>
 
         <div>
 
@@ -59,23 +57,22 @@
     </section>
 
     <!-- Contact -->
-    <section>
+    <section class="seccontact">
 
         <h2>Contact us for more information ...</h2>
 
-        <div>
+        <div class="innercontact">
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13737.435290138079!2d3.294565702271895!3d49.84505390851843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1687338193241!5m2!1sfr!2sfr"
-                width="540" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                allowfullscreen="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
             </iframe>
 
             <div>
 
-                <span>We'll be happy to hear from you !</span>
-                            <!-- Lien page traitement -->
+                <span id="happycontact">We'll be happy to hear from you !</span>
+                <!-- Lien page traitement -->
                 <form action="***************" method="post">
 
                     <label for="name"></label><input placeholder="Full name" type="text" name="name" id="name">
@@ -84,8 +81,8 @@
 
                     <label for="subject"></label><input placeholder="subject" type="text" name="subject" id="subject">
 
-                    <label for="Message"></label><textarea name="Message" id="Message" placeholder="Message"
-                        cols="50" rows="10"></textarea>
+                    <label for="Message"></label><textarea name="Message" id="Message" placeholder="Message" cols="50"
+                        rows="10"></textarea>
 
                     <button>SUBMIT</button>
 
@@ -98,21 +95,25 @@
     </section>
 
     <footer>
-        <img src="./IMG/CupCoffee PNG.png" width="120px" alt="Dessin d'une tasse à café">
+        <img src="./IMG/Logos/Coffee Cup.png" width="120px" alt="Dessin d'une tasse à café">
 
         <div>
 
-        <a href="https://www.instagram.com/" target="_blank"><img src="./IMG/InstagramSVG.svg" width="75px" alt="Lien Instagram"></a>
-        <a href="https://www.tiktok.com/fr/" target="_blank"><img src="./IMG/TiktokSVG.svg" width="75px" alt="Lien Tiktok"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="./IMG/TwitterSVG.svg" width="75px" alt="Lien Twitter"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="./IMG/FacebookSVG.svg" width="75px" alt="Lien Facebook"></a>
-        <span>© The Wonder Coffee • All rights reserved.</span>
-        
+            <a href="https://www.instagram.com/" target="_blank"><img src="./IMG/Logos/Logo Instagram.svg" width="75px"
+                    alt="Lien Instagram"></a>
+            <a href="https://www.tiktok.com/fr/" target="_blank"><img src="./IMG/Logos/Logo Tiktok.svg" width="75px"
+                    alt="Lien Tiktok"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="./IMG/Logos/Logo Twitter.svg" width="75px"
+                    alt="Lien Twitter"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./IMG/Logos/Logo Facebook.svg" width="75px"
+                    alt="Lien Facebook"></a>
+            <span>© The Wonder Coffee • All rights reserved.</span>
+
         </div>
 
-        <a href="#header"><img src="./IMG/ArrowTopSVG.svg" width="75px" alt="Lien vers le haut de page"></a>
-        <!-- Imène claque moi une ID header sur ton... header, stp ! -->        
-        
+        <a href="#header"><img src="./IMG/Logos/Flèche haut.svg" width="75px" alt="Lien vers le haut de page"></a>
+        <!-- Imène claque moi une ID header sur ton... header, stp ! -->
+
     </footer>
 
 </body>
