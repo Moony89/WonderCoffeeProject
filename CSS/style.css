@@ -46,7 +46,7 @@
 
 h2 {
     font-family: var(--fntleila3);
-    font-size: 4em;
+    font-size: 3em;
     color: var(--orng);
     text-align: center;
 }
@@ -59,45 +59,61 @@ h2 {
     margin: 75px 10%;
 }
 
-.innerspecial>p {
-    width: 40%;
+.innerspecial p {
     font-family: var(--fntleila2);
-    font-size: 2.25em;
+    font-size: 2em;
     color: var(--blmrn);
     text-align: center;
+    width: 40%;
 }
 
-.innerspecial>img {
+.innerspecial img {
     /* Temporaire, emplacement Carousel JS */
-    width: 40%;
     border: 5px solid white;
     border-radius: 50%;
-
+    width: 40%;
 }
 
 .cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: 8em;
-    height: 3.25em;
+    display: block;
+    width: 10%;
+    background-color: var(--blmrn);
     font-family: var(--fntgriffy);
     font-size: 2.5em;
     color: white;
     text-align: center;
     text-decoration: none;
-    border-radius: 5em;
-    background-color: var(--blmrn);
-    margin: 0 auto;
+    border-radius: 60px;
+    margin: auto;
+    padding: 20px 30px;
 }
 
 .cta:hover {
     text-decoration: underline;
 }
 
-.secmuseum {
+.secmuseum {    
     background-image: url(../IMG/Background\ alt.jpg);
     background-size: cover;
+}
+
+.innermuseum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.secmuseum p {
+    width: 40%;
+    font-family: var(--fntleila2);
+    font-size: 2em;
+    color: white;
+}
+
+.secmuseum img {
+    border: 5px solid white;
+    border-radius: 15px;
 }
 
 .seccontact {
@@ -117,28 +133,34 @@ h2 {
 
 iframe {
     border: 5px solid var(--orng);
-    box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, .25);
+    box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, .50);
     width: 40%;
-    height: 500px;
 }
 
-#happycontact {
+.form {
+    width: 40%;
+}
+
+.form>div {
     font-family: var(--fntleila2);
-    font-size: 2em;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-input,
-textarea {
+input, textarea {
     background-color: var(--blmrnopct);
-    padding: 15px;
+    font-family: var(--fntleila1);
+    font-size: 1.5em;
+    color: white;
+    padding: 10px;
     border-radius: 5px;
-    border: none;
+    border-style: none;
+    margin-top: 20px;
 }
 
 textarea {
@@ -146,10 +168,36 @@ textarea {
 }
 
 ::placeholder {
+    font-family: var(--fntleila1);
     color: white;
     opacity: 1;
 }
 
+button {
+    display: block;
+    width: 40%;
+    height: 2em;
+    background-color: var(--orng);
+    font-family: var(--fntleila1);
+    font-size: 1.5em;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, .50);
+    margin: 20px auto;
+}
+
+button:hover {
+    border: 3px solid white;
+}
+
 footer {
-display: flex;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blmrn);
+}
+
+#insta, #tiktok, #twit, #fb {
+    position: relative;
+    top: -40%;
 }

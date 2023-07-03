@@ -38,19 +38,22 @@
     <!-- Promo Musée -->
     <section class="secmuseum">
 
-        <p>
+        <div class="innermuseum">
 
-            The Tim Burton museum is just next to us...
-            If you want to discover the universe we have the perfect offer !
+            <p>
 
-        </p>
+                The Tim Burton museum is just next to us...
+                If you want to discover the universe we have the perfect offer !
 
-        <div>
+            </p>
 
-            <a href="http://www.google.fr/" target="_blank"><img src="./IMG/Museum.jpg" alt="The Burton Museum"></a>
+            <div>
 
-            <span>Click and visit me !</span>
-            <span>Have a 10% <em>discount</em> on the bill</span>
+                <a href="http://www.google.fr/" target="_blank"><img src="./IMG/Museum.jpg" alt="The Burton Museum"></a>
+
+                <div>Click and visit me !<br>Have a 10% <em>discount</em> on the bill</div>
+
+            </div>
 
         </div>
 
@@ -64,25 +67,26 @@
         <div class="innercontact">
 
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13737.435290138079!2d3.294565702271895!3d49.84505390851843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1687338193241!5m2!1sfr!2sfr"
-                allowfullscreen="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d388.16003642324927!2d3.2875048!3d49.848856999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8187d6305a3bf%3A0xd1e906a03eb8149!2s%C3%89couter%20Voir%20Optique%20Mutualiste!5e1!3m2!1sfr!2sfr!4v1688375695815!5m2!1sfr!2sfr"
+                allowfullscreen="" loading="lazy" height="512" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
-            <div>
+            <div class="form">
 
-                <span id="happycontact">We'll be happy to hear from you !</span>
+                <div>We'll be happy to hear from you !</div>
                 <!-- Lien page traitement -->
                 <form action="***************" method="post">
 
-                    <label for="name"></label><input placeholder="Full name" type="text" name="name" id="name">
+                    <label for="name"></label><input placeholder="Full name" type="text" name="name" id="name" required>
 
-                    <label for="email"></label><input placeholder="Email Address" type="text" name="email" id="email">
+                    <label for="email"></label><input placeholder="Email Address" type="text" name="email" id="email"
+                        required>
 
-                    <label for="subject"></label><input placeholder="subject" type="text" name="subject" id="subject">
+                    <label for="subject"></label><input placeholder="Subject" type="text" name="subject" id="subject"
+                        required>
 
-                    <label for="Message"></label><textarea name="Message" id="Message" placeholder="Message" cols="50"
-                        rows="10"></textarea>
+                    <label for="Message"></label><textarea name="Message" id="Message" placeholder="Message" cols="20"
+                        rows="3" required></textarea>
 
                     <button>SUBMIT</button>
 
@@ -95,18 +99,18 @@
     </section>
 
     <footer>
-        <img src="./IMG/Logos/Coffee Cup.png" width="120px" alt="Dessin d'une tasse à café">
+        <img src="./IMG/Logos/Coffee Cup.png" height="85dpx" alt="Dessin d'une tasse à café">
 
         <div>
 
-            <a href="https://www.instagram.com/" target="_blank"><img src="./IMG/Logos/Logo Instagram.svg" width="75px"
-                    alt="Lien Instagram"></a>
-            <a href="https://www.tiktok.com/fr/" target="_blank"><img src="./IMG/Logos/Logo Tiktok.svg" width="75px"
-                    alt="Lien Tiktok"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="./IMG/Logos/Logo Twitter.svg" width="75px"
-                    alt="Lien Twitter"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="./IMG/Logos/Logo Facebook.svg" width="75px"
-                    alt="Lien Facebook"></a>
+            <a id="insta" href="https://www.instagram.com/" target="_blank"><img src="./IMG/Logos/Logo Instagram.svg"
+                    width="75px" alt="Lien Instagram"></a>
+            <a id="tiktok" href="https://www.tiktok.com/fr/" target="_blank"><img src="./IMG/Logos/Logo Tiktok.svg"
+                    width="75px" alt="Lien Tiktok"></a>
+            <a id="twit" href="https://twitter.com/" target="_blank"><img src="./IMG/Logos/Logo Twitter.svg"
+                    width="75px" alt="Lien Twitter"></a>
+            <a id="fb" href="https://www.facebook.com/" target="_blank"><img src="./IMG/Logos/Logo Facebook.svg"
+                    width="75px" alt="Lien Facebook"></a>
             <span>© The Wonder Coffee • All rights reserved.</span>
 
         </div>
