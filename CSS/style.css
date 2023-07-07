@@ -12,12 +12,10 @@
     font-family: 'Griffy';
     src: url(../Griffy/Griffy-Regular.ttf);
 }
-
-body {
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
 }
-
 header {
     display: flex;
     align-items: center;
@@ -25,10 +23,9 @@ header {
     background-image: url(../IMG/warmWallBG.jpg);
     background-size: cover;
     width: 100%;
-    height: 120px;
+    height: 7.5em;
     font-family: 'Laila-Bold';
 }
-
 .logo {
     margin-left: 3em;
 }
@@ -37,52 +34,46 @@ ul {
     margin-right: .2em;
     display: flex;
 }
-
 li {
     list-style: none;
     color: #2A3374;
-    font-size: 1.8em;
-    padding: 2em;
+    font-size: calc(.8rem + 1.5vw);
+    padding-left: 2em;
+    padding-right: 2em;
     font-family: 'Laila-Bold';
 }
-
 li a {
     text-decoration: none;
 }
-
 .home {
     background-image: url(../IMG/denise-chan-IyH6ePGolyc-unsplash.jpg);
     background-size: cover;
-    width: 100%;
-    height: 1024px;
+    height: 110vh;
     color: antiquewhite;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding-top: 10%;
 }
-
-.fondPencil {
-    position: relative;
-    top: 25%;
-    text-align: center;
-    justify-content: center;
-}
-
 .textOver h2 {
     font-family: 'Griffy';
     color: white;
+    padding-bottom: .3em;
 }
-
 .textOver {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    font-size: 2em;
-    font-family: 'Laila-Regular';
+    background-image: url(../IMG/Vector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 40%;
+    font-size: 2.3em;
     color: white;
-    text-align: center;
+    padding: 5%;
+    margin-left: 10%;
+    text-align: center; 
 }
-
+.text{
+    font-family: 'Laila-Regular';
+    padding: 8%;
+}
 .blueRounded {
     color: white;
     font-family: 'Griffy';
@@ -90,50 +81,55 @@ li a {
     background-color: #2A3374;
     border-radius: 200px;
     padding: 1em;
-    position: absolute;
-    top: 110%;
-    left: 70%;
+    margin-left: 70%;
+    margin-top: 7%;
+    justify-content: end;
 }
-
 .gallery {
     background-image: url(../IMG/warmWallBG.jpg);
     background-size: cover;
-    position: absolute;
-    width: 1440px;
-    height: 1024px;
+    width: 100%;
+    height: 110vh;
+    padding-bottom: 5%; 
 }
 .containerGallery {
-    margin-top: 14em;
+    padding-top: 10em;
     display: grid;
-    grid-template-columns: repeat(4, 282px);
-    grid-template-rows: repeat(2, 233px);
-    gap: 15px;
-    justify-content: center;
-
+    grid-template-columns: repeat(4, 17rem);
+    grid-template-rows: repeat(2, 14.5rem);
+    gap: 1em;
+    width: 80%;
+    height: 40%;
+    padding-bottom: 12em;
+    margin: auto;
 }
-
 .containerGallery img{
     border: solid 3px white;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .grid1 {
     grid-area: 1 / 2 / 0 / 1;
 }
 .grid2 {
     background-color: rgba(214, 97, 74, 0.8);
-    width: 282px;
-    height: 233px;
     border: solid 3px white;
     color: white;
     font-family: "Griffy";
-    font-size: 2.25em;
+    font-size: 2.5em;
     text-align: center;
+    width: 100%;
+    height: 100%;
     grid-row: 2 / 3;
     grid-column: 0 / 1;
 }
 .grid3 {
-    grid-area: 1 / 3 / 1 / 2;
+    grid-row: 1/ 3;
+    grid-column: 2;
 }
 .grid4 {
+    width: 35em;
     grid-row: 1 / 2;
     grid-column: 3 / 4;
 }
@@ -143,17 +139,26 @@ li a {
 }
 .grid6 {
     grid-row: 2 / 3;
-    grid-column: 4;
-    
+    grid-column: 4;   
 }
 .quote{
     background-color: #2A3374;
     border: solid 3px white;
     color: white;
-    font-family: 'Griffy';
-    font-size: 2.25em;
+    font-family: 'Laila-Regular';
+    font-size: 1.25em;
     text-align: center;
     width: 80%;
-    margin-left: 10%;
-    margin-top: 1em;
+    margin: auto;  
+}
+.aboutUs{
+    background-image: url(../IMG/denise-chan-IyH6ePGolyc-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    font-family: "Griffy";
+    padding-top: 25%;
+}
+.textAbout{
+    font-size: 3em;
 }
