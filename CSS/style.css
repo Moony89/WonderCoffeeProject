@@ -9,23 +9,26 @@
 }
 
 html {
-  text-align: center;
   background: url("../IMG/Fond\ home.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
 }
 
 header {
+  text-align: center;
   height: 6em;
-  margin-top: 10%;
+  margin-top: 9%;
+  margin-bottom: 2%;
 }
 
 h1 {
   color: #fff;
   text-align: center;
-  font-size: 40px;
+
+  width: 50%;
+
+  font-size: 35px;
   font-family: "Griffy";
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 .container {
@@ -36,6 +39,49 @@ h1 {
   align-items: center;
 }
 
-.carrousel {
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.carrousel-1{
+  max-width: 300px;
+  height: 300px;
+  border: 4px solid #f1f1f1d2;
+  border-radius: 100%;
+  overflow: hidden;
   margin-top: 10%;
+}
+
+.carrousel-1 .carrousel {
+  display: flex;
+  animation: carrousel 20s infinite ease-in-out;
+}
+
+.carrousel-1 img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes carrousel {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
 }
