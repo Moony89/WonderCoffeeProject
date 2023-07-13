@@ -1,35 +1,17 @@
 @font-face {
-    font-family: 'Griffy';
-    src: url(../FONT/Griffy-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Laila1';
-    src: url(../FONT/Laila-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Laila2';
-    src: url(../FONT/Laila-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: 'Laila3';
-    src: url(../FONT/Laila-Bold.ttf);
+    font-family: 'Gabriela';
+    src: url(../FONT/Gabriela-Regular.ttf);
 }
 
 :root {
     /* Charte graphique */
     --orng: rgb(214, 97, 74);
-    --orngopct: rgb(214, 97, 74, 0.8);
+    --orngopct: rgb(214, 97, 74, 0.6);
     --blmrn: rgb(42, 51, 116);
     --blmrnopct: rgb(42, 51, 116, 0.7);
 
     /* Style police */
-    --fntleila1: 'Laila1';
-    --fntleila2: 'Laila2';
-    --fntleila3: 'Laila3';
-    --fntgriffy: 'Griffy';
+    --fntgab: 'Gabriela';
 }
 
 * {
@@ -40,87 +22,116 @@
 .secspecial {
     background-image: url(../IMG/Background.jpg);
     background-size: cover;
-    /* background-attachment: ?; */
-    padding: 170px 0 75px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fntgab);
+    padding: 100px 0;
 }
 
 h2 {
-    font-family: var(--fntleila3);
-    font-size: 3em;
+    font-size: 4em;
     color: var(--orng);
-    text-align: center;
+    text-decoration: underline;
 }
 
 .innerspecial {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20%;
-    margin: 75px 10%;
+    justify-content: space-evenly;
+    margin: 50px 0;
 }
 
-.innerspecial p {
-    font-family: var(--fntleila2);
-    font-size: 2em;
+.innerspecial>p {
+    font-size: 2.25em;
     color: var(--blmrn);
     text-align: center;
-    width: 40%;
+    width: 25%;
 }
 
-.innerspecial img {
+.innerspecial>img {
     /* Temporaire, emplacement Carousel JS */
-    border: 5px solid white;
+    border: 1px solid white;
+    /* 1px histoire de noter qu'il faudra une border, mais mon image en a déjà une par défaut */
     border-radius: 50%;
-    width: 40%;
+    width: 25%;
 }
 
 .cta {
-    display: block;
-    width: 10%;
-    background-color: var(--blmrn);
-    font-family: var(--fntgriffy);
+    display: inline-block;
+    background-color: var(--orng);
     font-size: 2.5em;
     color: white;
-    text-align: center;
     text-decoration: none;
+    outline: none;
     border-radius: 60px;
-    margin: auto;
     padding: 20px 30px;
+    box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, .50);
 }
 
 .cta:hover {
     text-decoration: underline;
+    border: 3px solid white;
+    margin-top: -6px;
+    /* Évite l'agrandissement de la page, 2*3px border */
+}
+
+.cta:active {
+    box-shadow: none;
+    transform: translate(4px);
 }
 
 .secmuseum {
-    background-image: url(../IMG/Background\ alt.jpg);
+    position: relative;
+    background-image: url(../IMG/Background-alt.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--fntgab);
+    color: white;
+    padding: 100px 0;
 }
 
-.innermuseum {
+.leftmuseum {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: var(--orngopct);
+    font-size: 2.25em;
+    text-align: center;
+}
+
+.leftmuseum>p {
+    margin: 0 50px;
+}
+
+.rightmuseum {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20%;
+}
+/* ICI LA SUITE */
+.rightmuseum>a {
+    width: 100%;
 }
 
-.secmuseum p {
-    width: 40%;
-    font-family: var(--fntleila2);
-    font-size: 2em;
-    color: white;
-}
-
-.secmuseum img {
+.rightmuseum>a>img {
+    width: 50%;
     border: 5px solid white;
     border-radius: 15px;
+    margin: 0 50px 0 calc(25% + 50px);
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 1);
 }
 
 .seccontact {
     background-image: url(../IMG/Background.jpg);
     background-size: cover;
-    /* background-attachment: ?; */
-    padding: 170px 0 75px 0;
+    padding: 100px 0 75px 0;
 }
 
 .innercontact {
@@ -201,12 +212,14 @@ button {
     margin: 20px auto;
 }
 
+
 button:hover {
     border: 3px solid white;
 }
 
+.cta:active,
 button:active {
-    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: none;
     transform: translate(4px);
 }
 
@@ -224,11 +237,44 @@ footer>a {
     margin: auto 2%;
 }
 
-.socialmedia {}
+/* .socialmedia {}
 
 #insta,
 #tiktok,
 #twit,
 #fb {
 
+} */
+
+@media screen and (max-width: 1280px) {
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .innerspecial {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .innerspecial>p {
+        font-size: 1.5em;
+        width: 50%;
+    }
+
+    .innerspecial>img {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    h2 {
+        font-size: 2em;
+    }
+    
+    .innerspecial>p {
+        font-size: 1em;
+    }
 }

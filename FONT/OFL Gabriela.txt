@@ -1,5 +1,4 @@
-Copyright (c) 2012, Font Diner (www.fontdiner.com),
-with Reserved Font Name "Griffy".
+Copyright 2013 The Gabriela Project Authors (https://github.com/etunni/Gabriela), with Reserved Font Name "Gabriela".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
