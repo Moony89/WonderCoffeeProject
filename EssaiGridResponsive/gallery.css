@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.containerGallery div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerGallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.containerGallery{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px), 1fr);
+    grid-auto-rows: 200px;
+    grid-auto-flow: column;
+}
+.containerGallery .tall{
+    grid-row: span 2;
+}
+.containerGallery .wide{
+    grid-column: span 2;
+}
