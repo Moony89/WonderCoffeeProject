@@ -1,0 +1,9 @@
+:root {
+  --BG: #d8c9af;
+  --orange: #d6614a;
+}
+
+html {
+  background-color: var(--BG);
+  font-family: laila;
+}
