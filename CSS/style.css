@@ -26,10 +26,10 @@
     flex-direction: column;
     align-items: center;
     font-family: var(--fntgab);
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
-h2 {
+.title {
     font-size: 4em;
     color: var(--orng);
     text-decoration: underline;
@@ -43,7 +43,7 @@ h2 {
 }
 
 .innerspecial>p {
-    font-size: 2.25em;
+    font-size: 2em;
     color: var(--blmrn);
     text-align: center;
     width: 25%;
@@ -51,8 +51,7 @@ h2 {
 
 .innerspecial>img {
     /* Temporaire, emplacement Carousel JS */
-    border: 1px solid white;
-    /* 1px histoire de noter qu'il faudra une border, mais mon image en a déjà une par défaut */
+    border: 3px solid white;
     border-radius: 50%;
     width: 25%;
 }
@@ -66,19 +65,13 @@ h2 {
     outline: none;
     border-radius: 60px;
     padding: 20px 30px;
-    box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, .50);
+    box-shadow: 10px 10px 2px 0 rgba(0, 0, 0, .5);
 }
 
 .cta:hover {
-    text-decoration: underline;
     border: 3px solid white;
-    margin-top: -6px;
+    padding: 17px 27px;
     /* Évite l'agrandissement de la page, 2*3px border */
-}
-
-.cta:active {
-    box-shadow: none;
-    transform: translate(4px);
 }
 
 .secmuseum {
@@ -88,24 +81,23 @@ h2 {
     background-attachment: fixed;
     font-family: var(--fntgab);
     color: white;
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
 .leftmuseum {
     display: flex;
     align-items: center;
-    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 25%;
     height: 100%;
-    background-color: var(--orngopct);
-    font-size: 2.25em;
-    text-align: center;
+    background-color: var(--orngopct);    
 }
 
 .leftmuseum>p {
+    font-size: 2em;
+    text-align: center;
     margin: 0 50px;
 }
 
@@ -114,58 +106,61 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
-/* ICI LA SUITE */
-.rightmuseum>a {
-    width: 100%;
+
+.rightmuseum>a,
+.rightmuseum>img {
+    width: 50%;
+    margin-left: calc(25% - 6px);
 }
 
 .rightmuseum>a>img {
-    width: 50%;
-    border: 5px solid white;
+    width: 100%;
+    border: 3px solid white;
     border-radius: 15px;
-    margin: 0 50px 0 calc(25% + 50px);
-    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 1);
 }
 
+.rightmuseum>img {
+    /* Image discount */
+    width: 33%;
+    filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.5));
+}
 .seccontact {
     background-image: url(../IMG/Background.jpg);
     background-size: cover;
-    padding: 100px 0 75px 0;
+    font-family: var(--fntgab);
+    text-align: center;
+    padding: 80px 0;
 }
 
 .innercontact {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20%;
-    margin: 75px 10%;
+    gap: 10%;
+    margin: 50px 10% 0 10%;
 }
 
 iframe {
-    border: 5px solid var(--orng);
+    border: 3px solid var(--orng);
     box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, .50);
-    width: 45%;
-    height: 512px;
+    width: 50%;
+    height: 600px;
     border-radius: 5px;
-    /* Pas moyen de modifier la hauteur autrement... ? */
 }
 
 iframe:hover {
-    border: 5px solid white;
+    border: 3px solid white;
 }
 
-.innercontact>div>form>p {
-    font-family: var(--fntleila2);
-    font-size: 1.75em;
+.innercontact>form>span {
+    font-size: 2em;
     text-align: center;
 }
 
-.form {
-    width: 45%;
-}
-
 form {
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -173,14 +168,14 @@ form {
 input,
 textarea {
     background-color: var(--blmrnopct);
-    font-family: var(--fntleila1);
+    font-family: var(--fntgab);
     font-size: 1.5em;
     color: white;
-    border: 3px solid var(--orngopct);
+    border: 3px solid var(--orng);
     border-radius: 5px;
     outline: none;
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 input:focus,
@@ -193,35 +188,32 @@ textarea {
 }
 
 ::placeholder {
-    font-family: var(--fntleila1);
-    color: white;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
-button {
-    display: block;
-    width: 35%;
-    height: 2em;
+.submit {
     background-color: var(--orng);
-    font-family: var(--fntleila1);
     font-size: 1.5em;
     color: white;
-    border-radius: 15px;
-    border-style: none;
+    border-radius: 60px;
     box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, .50);
     margin: 20px auto;
+    padding: 20px 30px;
 }
 
 
-button:hover {
+.submit:hover {
     border: 3px solid white;
+    padding: 20px 30px;
 }
 
 .cta:active,
-button:active {
+.submit:active {
     box-shadow: none;
-    transform: translate(4px);
+    transform: translate(5px, 5px);
 }
+
+/* REPRENDRE ICI */
 
 footer {
     display: flex;
@@ -248,7 +240,7 @@ footer>a {
 
 @media screen and (max-width: 1280px) {
 
-    h2 {
+    .title {
         font-size: 3em;
     }
 
@@ -258,23 +250,105 @@ footer>a {
     }
 
     .innerspecial>p {
-        font-size: 1.5em;
         width: 50%;
+    }
+    
+    .innerspecial>p,
+    .leftmuseum>p,
+    .innercontact>form>span {
+        font-size: 1.5em;
     }
 
     .innerspecial>img {
-        width: 40%;
+        width: 25%;
+    }
+
+    .cta,
+    .submit {
+        font-size: 1.875em;
+    }
+
+    .rightmuseum>img {
+        width: 50%;
+    }
+
+    .innercontact {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    iframe {
+        width: 80%;
+        height: 500px;
+    }
+
+    form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        font-size: 1.375em;
+    }
+
+    ::placeholder {
+        font-size: 0.75em;
     }
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
 
-    h2 {
+    .title {
+        font-size: 2.5em;
+    }
+
+    .innerspecial>p,
+    .leftmuseum>p,
+    .innercontact>form>span {
+        font-size: 1.25em;
+    }
+
+    .cta,
+    .submit {
+        font-size: 1.5625em;
+    }
+
+    .leftmuseum>p {
+        margin: 0 25px;
+    }
+    
+    iframe {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .title {
         font-size: 2em;
     }
     
-    .innerspecial>p {
+    .innerspecial>p,
+    .leftmuseum>p,
+    .innercontact>form>span {
         font-size: 1em;
     }
+
+    .cta,
+    .submit {
+        font-size: 1.25em;
+    }
+
+    .leftmuseum>p {
+        margin: 0 12.5px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
 }
